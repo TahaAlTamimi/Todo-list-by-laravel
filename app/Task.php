@@ -13,8 +13,12 @@ class Task extends Model
     public $primaryKey = 'id';
     // Timestamps
     public $timestamps = true;
+
+//    public function user(){
+//        return $this->belongsTo('App\User');
+//    }
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->hasOne('App\User');
     }
 
 }

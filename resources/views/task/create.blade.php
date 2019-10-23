@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+{{--    @include('navbar')--}}
 <h1>create Task</h1>
 <form method="POST" action="/Task/create">
     {{csrf_field()}}

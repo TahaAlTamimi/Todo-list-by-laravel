@@ -76,8 +76,9 @@
 </div>
 @endforeach
     @else
-    <form action="/Task/create"> <button>  make task</button> </form>
-<p>no tasks</p>
+
+<h1 class="p-3 mb-2 bg-success text-white">Great Job </h1>
+            <form action="/Task/create" > <button class="btn btn-primary">  Make New Task</button> </form>
     @endif
 
 
